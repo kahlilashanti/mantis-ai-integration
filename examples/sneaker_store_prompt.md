@@ -1,6 +1,6 @@
 # Example: Sneaker Store Prompt → Mantis Agent Tools
 
-## 🗣️ User Prompt
+## 🗣️ Sample User Prompt
 
 > "Build a 3D storefront for a sneaker brand called 'SneakerLab'.  
 > Add a product called 'StreetGlow 7s' with this image: https://example.com/sg7.jpg and this GLB: https://example.com/sg7.glb.  
@@ -18,18 +18,20 @@
     "url": "https://mantisxr.com/sneakerlab"
   }
 }
+```
 
-Navigate to product spotlight scene
+2. **Navigate to product spotlight scene**
+```json
 {
   "function": "go_to_scene",
   "arguments": {
     "sceneId": "spotlight"
   }
 }
+```
 
-
-update logo in scene
-
+3. **Update logo in scene**
+```json
 {
   "function": "update_scene",
   "arguments": {
@@ -38,4 +40,13 @@ update logo in scene
     }
   }
 }
+```
 
+---
+
+## 🔍 Why This Matters
+
+AI tools (LangChain, GPT-4o, v0.dev, etc.) use natural language to call these functions.  
+This file shows **how to structure your requests** or agent instructions to work seamlessly with Mantis.
+
+Want more examples? Add them here.
