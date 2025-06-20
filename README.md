@@ -27,3 +27,46 @@ This is the official SDK for integrating Mantis with AI agents. It includes:
 git clone https://github.com/mantisxr/mantis-ai-integration.git
 cd mantis-ai-integration
 pip install -r requirements.txt
+
+Create a .env file with your OpenAI key based on .env.example
+
+2. Run the LangChain agent demo
+python mantis_agent_demo.py
+The agent will simulate a natural-language request to load a 3D experience and update its content.
+
+🧱 Available Tools (MCP Spec)
+Tool	Description
+load_experience	Load a Mantis storefront by URL
+go_to_scene	Navigate to a specific scene
+update_scene	Dynamically update scene content (logo, video)
+get_current_scene	Return the active scene ID
+
+🔗 OpenAI Function Calling
+You can also plug openai_functions_schema.json directly into:
+
+GPT-4o agents
+
+v0.dev workflows
+
+OpenAI Assistant APIs
+
+🧪 Examples
+See /examples/sneaker_store_prompt.md for natural-language use cases like:
+
+“Load the Cubs 3D store and swap the sponsor logo to Adidas.”
+
+📚 Docs
+See /docs/how-it-works.md for a step-by-step breakdown of how the agent and tools work together.
+
+👀 What’s Coming
+Full CMS API integration
+
+Live iframe demo + hosted preview
+
+Shopify/Roblox/Amazon-specific agent starters
+
+🔒 License
+MIT. Use, remix, and build with it.
+
+💬 Questions?
+Visit mantisxr.com
