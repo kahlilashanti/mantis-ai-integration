@@ -1,0 +1,60 @@
+[
+    {
+        "name": "load_experience",
+        "description": "Load a Mantis 3D storefront by URL",
+        "parameters": {
+            "type": "object",
+            "properties": {
+                "url": {
+                    "type": "string",
+                    "format": "uri",
+                    "description": "The full URL of the Mantis 3D experience"
+                }
+            },
+            "required": [
+                "url"
+            ]
+        }
+    },
+    {
+        "name": "go_to_scene",
+        "description": "Navigate to a specific scene in the 3D experience",
+        "parameters": {
+            "type": "object",
+            "properties": {
+                "sceneId": {
+                    "type": "string",
+                    "description": "ID of the scene to navigate to"
+                }
+            },
+            "required": [
+                "sceneId"
+            ]
+        }
+    },
+    {
+        "name": "update_scene",
+        "description": "Update elements in the current scene (e.g., logo, video)",
+        "parameters": {
+            "type": "object",
+            "properties": {
+                "data": {
+                    "type": "object",
+                    "description": "Key-value map of scene elements to update"
+                }
+            },
+            "required": [
+                "data"
+            ]
+        }
+    },
+    {
+        "name": "get_current_scene",
+        "description": "Get the ID of the current scene",
+        "parameters": {
+            "type": "object",
+            "properties": {},
+            "required": []
+        }
+    }
+]
